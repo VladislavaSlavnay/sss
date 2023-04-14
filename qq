@@ -1,0 +1,18 @@
+<?php
+for($i=0; $i<18; $i++){
+   echo "1111111 <br>";
+}
+date_default_timezone_set ('Asia/Yekaterinburg');
+$hour = date ('H');
+if($hour>7 && $hour<12){
+   echo "Доброе утро.";
+}else if ($hour>11 && $hour<18){
+   echo "Добрый день.";
+}else if ($hour>17 && $hour<00){
+   echo "Добрый Вечер.";
+}else if ($hour>23 && $hour<00){
+   echo "Ошибочка";
+}else if ($hour>00 && $hour<7){
+   echo "Доброй Ночи.";
+}
+?>
